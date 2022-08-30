@@ -1,5 +1,185 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Shakyra - shakyracc</title><link href="https://shakyracornelius.github.io/shakyracc/" rel="alternate"></link><link href="https://shakyracornelius.github.io/shakyracc/feeds/shakyracc.atom.xml" rel="self"></link><id>https://shakyracornelius.github.io/shakyracc/</id><updated>2022-07-26T00:00:00-04:00</updated><entry><title>First Django Project</title><link href="https://shakyracornelius.github.io/shakyracc/first-django-project.html" rel="alternate"></link><published>2022-07-26T00:00:00-04:00</published><updated>2022-07-26T00:00:00-04:00</updated><author><name>shakyra</name></author><id>tag:shakyracornelius.github.io,2022-07-26:/shakyracc/first-django-project.html</id><summary type="html">&lt;p&gt;I spent the last 48 hours working on my first django &lt;a href="https://gentle-harbor-06443.herokuapp.com"&gt;project&lt;/a&gt;. It took way longer than i expected and the 48 hours mentioned do not include time spent reading django documentation in preparation for this weekend's coding session. It's fair to say that i'm exhausted but i think it …&lt;/p&gt;</summary><content type="html">&lt;p&gt;I spent the last 48 hours working on my first django &lt;a href="https://gentle-harbor-06443.herokuapp.com"&gt;project&lt;/a&gt;. It took way longer than i expected and the 48 hours mentioned do not include time spent reading django documentation in preparation for this weekend's coding session. It's fair to say that i'm exhausted but i think it was worth it. &lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Shakyra - shakyracc</title><link href="https://shakyracornelius.github.io/shakyracc/" rel="alternate"></link><link href="https://shakyracornelius.github.io/shakyracc/feeds/shakyracc.atom.xml" rel="self"></link><id>https://shakyracornelius.github.io/shakyracc/</id><updated>2022-08-30T00:00:00-04:00</updated><entry><title>First Hackathon</title><link href="https://shakyracornelius.github.io/shakyracc/first-hackathon.html" rel="alternate"></link><published>2022-08-30T00:00:00-04:00</published><updated>2022-08-30T00:00:00-04:00</updated><author><name>shakyra</name></author><id>tag:shakyracornelius.github.io,2022-08-30:/shakyracc/first-hackathon.html</id><summary type="html">&lt;p&gt;&lt;a href="https://github.com/shakyracornelius/hackathon-code-battle-edition"&gt;GitHub Repo&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This hackathon was an incredible learning experience for me. Of the entire tech stack used to build this project, I only had experience in Jira and Github. @3fcc#1923 and I discoverd Zeplin together as a platform to share figma designs. &lt;/p&gt;
+&lt;p&gt;I initially thought I could tackle the …&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a href="https://github.com/shakyracornelius/hackathon-code-battle-edition"&gt;GitHub Repo&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This hackathon was an incredible learning experience for me. Of the entire tech stack used to build this project, I only had experience in Jira and Github. @3fcc#1923 and I discoverd Zeplin together as a platform to share figma designs. &lt;/p&gt;
+&lt;p&gt;I initially thought I could tackle the problem with Django, but that flew out the door as soon as it became clear that connecting it to HarperDB was not going to be a beginner friendly task. Weird that I thought this and decided learning 2 stacks (MERN &amp;amp; HERN) was an easier route. &lt;/p&gt;
+&lt;p&gt;I started out with MongoDB as the database because there's simply more documentation out there on it. As a complete noob, I needed all the help I could get. I ended up following a tutorial on a MERN Tinder clone by Code with Ania Kubów on &lt;a href="https://www.youtube.com/watch?v=Q70IMS-Qnjk"&gt;Youtube&lt;/a&gt;. It's 5 hours long, but it's safe to say I've cycled through it at least 7 times. Again. noob. Totally worth it though. &lt;/p&gt;
+&lt;p&gt;To understand what Ania was saying, I read the Javascript, React and Nodejs(piece of it at least) handbooks by Flavio Copes @flaviocopes. 10/10 Highly recommend. &lt;/p&gt;
+&lt;p&gt;After that I went back to the code and tried my best to understand each line, making modifications where necessary. Once I managed to turn the tinder clone into DevHire using MongoDB, I read up on HarperDB documentation. Oh...this last paragraph all happened today [2022-08-29-04-00] btw. I say that because I often allow myself to forget my hard work. Not today though. Today I really pushed to meet the Hackathon requirements and I feel really proud of what myself and @3fcc#1923 have produced. &lt;/p&gt;
+&lt;p&gt;So yes, I got familiar with HarperDB through videos and documentation then gave it a try. &lt;em&gt;queue emotional damage.&lt;/em&gt; It's simpler than MongoDB in a way I guess, but the lack of community and documentation makes it a HEADACHEEE. omg debugging was a nightmare, but now that I've done it, I feel like I can do it again with less distress. and what's up with the arrays? i couldn't figure out how to 1. query an array and 2. do conditional search on the entire db, not just a row or hashed value. [2022-08-30-02-14]: i think i might have figure this out now. i just needed sleep and revisited articles. &lt;a href="https://blog.francescociulla.com/crud-rest-api-using-nodejs-express-harperdb-docker"&gt;this article by Francesco Ciulla&lt;/a&gt; clarified things for me. Which means I might be able to make some improvements to the app. &lt;/p&gt;
+&lt;h3&gt;[2022-08-30-02-14] Deploying the site&lt;/h3&gt;
+&lt;p&gt;Yes! Another thing I thought would take no time. 6hours later, here we are. 😪 but I've done it 😁 making use of Heroku's free tier while it's still available. Anyway, here's what it took. 
+- googled "how to deploy harperdb app". no results so...
+- googled "deploy mern stack". 
+- read through a bunch of articles until i landed on one i thought might work for me. i've learned my lesson. don't jump into the first article you find. read them through lest you find yourself screwing up your code and debugging for days. &lt;a href="https://dev.to/stlnick/how-to-deploy-a-full-stack-mern-app-with-heroku-netlify-ncb"&gt;this article by Nick Ray&lt;/a&gt; provided a great guide
+- debug debug debug debug. if you check the commit history of this repo, you'll see that it was the node_modules, bcrypt and react-country dropdown packages giving the most trouble. i had to git -rm -r --cache . everything. i probably didn't have to do that actually, now that i know how this all works a bit more. i installed packages in the wrong directories. things were all over the place. thank you stackoverflow for existing 🙏
+- more debugging: fixing netlify compile issues when deploying with the help of &lt;a href="https://dev.to/yuridevat/2-ways-to-overcome-deployment-problems-with-react-on-netlify-4l5p#chapter-3"&gt;this article by Julia Undeutsch&lt;/a&gt;
+- fixed page not found error with the help of &lt;a href="https://dev.to/rajeshroyal/page-not-found-error-on-netlify-reactjs-react-router-solved-43oa"&gt;this article by Rajesh Royal&lt;/a&gt;
+- success ! 🥳 I think I might actually understand how an API really works now. nice 🤗 i think it's so cool that the app is deployed on two platforms. Netflify frontend and Heroku backend. didn't know that was possible. &lt;/p&gt;
+&lt;h4&gt;Tech Stack&lt;/h4&gt;
+&lt;p&gt;Backend: 🟪 Heroku, 🐶 HarperDB, 🍃 MongoDB 🔗 Node.js, 🧩 Express, 🟣 Insomnia &lt;br&gt;
+Frontend: 🔷 Netlify, ⚛️ React.js, 🎨 Figma, 🎈 Zeplin &lt;br&gt;
+Project Management: 🔷 Jira Software, 🔷 Confluence, 🚥 Google Meet, 📦 Github &lt;br&gt;&lt;/p&gt;
+&lt;p&gt;I wish I knew about 🟣  Insomnia at the start of the project. I would have saved soooo much time on backend work. I only discovered it today [2022-08-28]. Game changer)&lt;/p&gt;
+&lt;h4&gt;Team Work&lt;/h4&gt;
+&lt;p&gt;I met @3fcc#1923 on reddit a few months ago when they were searching for a Dart programming language learning mate. Soon after that I stopped learning Dart and started learning Python. So we didn't speak for a while, until I stumbled upon this hackathon. I approached them to collaborate with me and to my delight they said yes 💃. They live 5 hours ahead of me, but we managed to make this work almost seamlessly. It was a pleasure working with a fellow knowledge hungry beginner to web development. We used Jira, Confluence, Zeplin, Whatsapp and Google Meet to stay connected. We pitched ideas back and forth and gave words of encouragement along the way. &lt;/p&gt;
+&lt;h4&gt;Acknowledgments&lt;/h4&gt;
+&lt;p&gt;&lt;a href="https://www.youtube.com/watch?v=Q70IMS-Qnjk"&gt;Code with Ania Kubów&lt;/a&gt; &lt;br&gt;
+&lt;a href="https://flaviocopes.com"&gt;Flavio Copes&lt;/a&gt; &lt;br&gt;
+&lt;a href="https://dev.to/amanhimself/build-a-rest-api-with-node-js-and-harperdb-3738"&gt;Aman Mittal&lt;/a&gt; &lt;br&gt;
+Dennis Ivy for hosting the Hackathon &lt;/p&gt;
+&lt;h4&gt;Lessons&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;It's easy to get side tracked with cool ideas. "oh let me just add this function really quickly" turns into 5 hours of coding EASILY&lt;/li&gt;
+&lt;li&gt;CSS is a time sink. don't get caught there for too long. tell a friend you're diving in so they can reinforce a time limit. &lt;/li&gt;
+&lt;li&gt;Having a designer makes life WAYYYYYY easier as a full stack dev. Thank you @3fcc#1923 for taking on this challenge with me. &lt;/li&gt;
+&lt;li&gt;MVP MVP MVP MVP. I eliminated a block of code every time I sat down with the laptop. Too many bugs? can it. this is a prototype. I kept thinking, " there are gonna be so many experts in this competition, i NEEED working code and cool features to stand out"............garbage. Focus on your MVP. Refine the MVP if necessary. &lt;/li&gt;
+&lt;li&gt;Good project management tools help A LOT. They make remote team collaboration seemless. &lt;/li&gt;
+&lt;/ol&gt;</content><category term="shakyracc"></category><category term="hern"></category></entry><entry><title>Benefits of One-on-Ones - Part 1</title><link href="https://shakyracornelius.github.io/shakyracc/benefits-of-one-on-ones-1.html" rel="alternate"></link><published>2022-08-11T00:00:00-04:00</published><updated>2022-08-11T00:00:00-04:00</updated><author><name>shakyra</name></author><id>tag:shakyracornelius.github.io,2022-08-11:/shakyracc/benefits-of-one-on-ones-1.html</id><summary type="html">&lt;p&gt;I recently stumbled upon a podcast called &lt;a href="https://www.manager-tools.com/all-podcasts"&gt;"Manager Tools"&lt;/a&gt; and like all newly discovered podcasts, I immediately sorted the episodes from oldest to newest and listened to the second episode (I always skip the first episode). It was actually 1 episode out of a 3-part series discussing the benefits of …&lt;/p&gt;</summary><content type="html">&lt;p&gt;I recently stumbled upon a podcast called &lt;a href="https://www.manager-tools.com/all-podcasts"&gt;"Manager Tools"&lt;/a&gt; and like all newly discovered podcasts, I immediately sorted the episodes from oldest to newest and listened to the second episode (I always skip the first episode). It was actually 1 episode out of a 3-part series discussing the benefits of what Mark and Mike call "the single most effective management tool available today - the weekly One-on-One". Even though this episode was created 10 years ago, I still got a lot of value out of it. Here's what I learned. ​​​​​​​&lt;/p&gt;
+&lt;h2&gt;&lt;a href="https://www.manager-tools.com/2005/07/the-single-most-effective-management-tool-part-1"&gt;One-on-Ones - Part 1 | Manager Tools Podcast Episode&lt;/a&gt;&lt;br&gt;&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;"The single most effective thing Manager Tools can recommend to improve the results that you and your team get is to start meeting with them regularly, weekly for a half hour which is what we call a One-on-One"&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;What is a 1-1?&lt;/h2&gt;
+&lt;p&gt;In order to get the most out of your people, in order to close the gap between where they are and what they're capable of, you have to know each of your team members individually. &lt;/p&gt;
+&lt;p&gt;Managing all your people the same is a bad idea. Different people require different things from their bosses. Every person who works for you is an individual. It's not hard at all to get to know their individual strengths and weaknesses.&lt;/p&gt;
+&lt;p&gt;Manager Tools posits that a better relationship with directs will improve results, but how do you create a relationship with them? &lt;/p&gt;
+&lt;p&gt;If you want to have a better relationship with your directs, you must engage in regular high-quality communication, discussing topics that are important to the direct.&lt;/p&gt;
+&lt;p&gt;If you're going around saying "hey, how's it going. how's the family", you're not building a relationship. That's you being polite. We as humans don't magically relate to somebody who doesn't spend any time with us and only talks about things that are important to them. &lt;/p&gt;
+&lt;p&gt;The Manager Tools team tried many approaches to One-on-Ones and failed miserably until they found the right formula. One particular approach which went horribly wrong was having the manager use the first 15 minutes to talk about whatever they wanted to talk about and the direct using the other 15 minutes to do the same. Why was this a disaster? Wellllll, the manager ended up using about 28 minutes and the direct opted out of using their remaining 2 minutes because.... what's the point? They're already thinking "This meeting is not about me".&lt;/p&gt;
+&lt;p&gt;So, here's the definition of a one-on-one.&lt;/p&gt;
+&lt;p&gt;A one-on-one is a half-hour, weekly meeting with every one of your directs structured specifically based on the agenda: 10 minutes for them, 10 minutes for you, 10 minutes to talk about the future. They happen every single week, with every single direct, half an hour long, scheduled on your calendar and rarely missed. &lt;/p&gt;
+&lt;p&gt;One-on-ones exist to create a space for your directs to come to you with things that are of interest/importance to them.&lt;/p&gt;
+&lt;h2&gt;Dos and don'ts for your 1-1s&lt;/h2&gt;
+&lt;p&gt;Don't&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;neglect structure &lt;/li&gt;
+&lt;li&gt;neglect to schedule it in your calendar&lt;/li&gt;
+&lt;li&gt;fail to focus the meeting on the team member.&lt;/li&gt;
+&lt;li&gt;lead with "before we start, give me a quick update on project x". &lt;/li&gt;
+&lt;li&gt;treat the meeting like a staff/team weekly update meeting&lt;/li&gt;
+&lt;li&gt;violate the fundamental reason the one-on-one exists which is to give a platform to the direct to allow them to communicate to you what's important to them. &lt;/li&gt;
+&lt;li&gt;put them on your calendar then reschedule every week, turn up late or completely ghost the meeting with a "sorry I missed this" message. &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Do: &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;give your 1-1s priority when moving things around on your calendar&lt;/li&gt;
+&lt;li&gt;allow them their full 10 minutes during the 30 minutes or let them run over if you notice they're opening up and enjoying the meeting. &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;What to expect when you start doing 1-1s&lt;/h2&gt;
+&lt;p&gt;You start getting fewer questions during the week. People start reserving their questions for their one-on-one time with you. 
+People are no longer making up questions to ask you to create a relationship with you. &lt;br&gt;&lt;/p&gt;
+&lt;p&gt;You end up getting more time back for deep work because you aren't getting interrupted during the week. 
+So, when do you schedule the one-on-one? &lt;/p&gt;
+&lt;h2&gt;Scheduling a 1-1&lt;/h2&gt;
+&lt;p&gt;The structured agenda of the one-on-one makes an enormous difference, but the real value, the most important thing is that they are scheduled. This is more important than having unscheduled one-on-ones every week. &lt;/p&gt;
+&lt;p&gt;A scheduled one-on-one communicates to your directs that you're always going to have time with them. You're always going to be investing in the relationship. It says, "This is important. You're important". When a 1-1 has a scheduled reoccurrence with no end date, the directs know that they have pride of place.&lt;/p&gt;
+&lt;p&gt;Not scheduling says "This might be important any given week. You might be important. The time with me might be valuable. I'm not committing to this." It communicates a lack of interest in doing it and a lack of fortitude in willpower. Not scheduling says "This is just another flavor of the month. This will taper off soon. They're not serious about this. I'll wait it off. "&lt;/p&gt;
+&lt;h2&gt;The importance of sticking to the 1-1&lt;/h2&gt;
+&lt;p&gt;Every time you try something new, and you discard it in a month because it's hard, pretty soon you'll never get a significant change to happen. Team members will develop callouses to any kind of initiative and you'll lose credibility.&lt;/p&gt;
+&lt;p&gt;Weekly 1-1s might be hard to do in the beginning, but it makes your job easier and makes you more effective. &lt;/p&gt;
+&lt;h2&gt;Why monthly 1-1s are a big no-no&lt;/h2&gt;
+&lt;p&gt;A monthly 1-1 is a non sequitur. You can't create a relationship with a human being by talking to them for 30 minutes once a month. Dedicating 6 hours a year to each of your directs will not help you understand them well. Plus, you'll likely forget what you talked about in the previous meeting. Instead of being a 1-1, it becomes a business meeting. &lt;/p&gt;
+&lt;h2&gt;Why bi-weekly 1-1s aren't recommended&lt;/h2&gt;
+&lt;p&gt;We tend to structure our work memory around things we have to do, deadlines we have to make, responses we have to provide, and steps we have to take over the next 3-5 days. Things that are happening 2 weeks from now are put on the back burner.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;"Relationships don't exist outside of your behavior in the relationship. You don't create a relationship and then have it. A relationship isn't something you have. It is an outshoot of the behavior. If you change your behavior in a relationship, the relationship changes. The relationship is not a thing, it is the behaviors within it"&lt;/p&gt;
+&lt;/blockquote&gt;</content><category term="shakyracc"></category><category term="blog"></category></entry><entry><title>Podcasts Worth A Try</title><link href="https://shakyracornelius.github.io/shakyracc/podcasts-worth-a-try.html" rel="alternate"></link><published>2022-08-11T00:00:00-04:00</published><updated>2022-08-11T00:00:00-04:00</updated><author><name>shakyra</name></author><id>tag:shakyracornelius.github.io,2022-08-11:/shakyracc/podcasts-worth-a-try.html</id><summary type="html">&lt;p&gt;Cal Newport, author of Deep Work, doesn't encourage context switching when attempting to focus, but I do think listening to a podcast while carrying out tasks of minimal cognitive load is an example of effective multi-tasking.&lt;/p&gt;
+&lt;p&gt;Here are my picks for cool podcasts to check out in no particular order …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Cal Newport, author of Deep Work, doesn't encourage context switching when attempting to focus, but I do think listening to a podcast while carrying out tasks of minimal cognitive load is an example of effective multi-tasking.&lt;/p&gt;
+&lt;p&gt;Here are my picks for cool podcasts to check out in no particular order.&lt;/p&gt;
+&lt;div class="d-flex justify-content-center"&gt;
+    &lt;div class="list-group align-items-center"&gt;
+        &lt;a href="https://stevenbartlett.com/the-diary-of-a-ceo-podcast/"
+             class="list-group-item list-group-item-action flex-column align-items-center"&gt;
+                &lt;h5 class="mb-1 text-center"&gt;The Diary Of A CEO&lt;/h5&gt;
+            &lt;p class="text-center"&gt;The Diary of a CEO is an unfiltered journey into the remarkable stories of the people that have defined culture, achieved greatness and created stories worth studying.
+            &lt;/p&gt;
+         &lt;/a&gt;
+     &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="d-flex justify-content-center"&gt;
+    &lt;div class="list-group align-items-center"&gt;
+        &lt;a href="hubermanlab.com"
+             class="list-group-item list-group-item-action flex-column align-items-center"&gt;
+                &lt;h5 class="mb-1 text-center"&gt;Huberman Lab&lt;/h5&gt;
+            &lt;p class="text-center"&gt;Hosted by Dr. Andrew Huberman, The Huberman Lab Podcast discusses science and science-based tools for everyday life. New episodes are released every Monday.
+            &lt;/p&gt;
+         &lt;/a&gt;
+     &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="d-flex justify-content-center"&gt;
+    &lt;div class="list-group align-items-center"&gt;
+        &lt;a href="https://podcasts.apple.com/us/podcast/manager-tools/id74198801"
+             class="list-group-item list-group-item-action flex-column align-items-center"&gt;
+                &lt;h5 class="mb-1 text-center"&gt;Manager Tools on Apple Podcasts&lt;/h5&gt;
+            &lt;p class="text-center"&gt;Manager Tools is a weekly business podcast focused on helping professionals become more effective managers and leaders. Each week, we discuss specific actions for professionals to take to achieve their desired management and career objectives.&lt;/p&gt;
+         &lt;/a&gt;
+     &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="d-flex justify-content-center"&gt;
+    &lt;div class="list-group align-items-center"&gt;
+        &lt;a href="https://open.spotify.com/show/08Gn2PZpmyGxYfAKEGdLQy?si=75d752a481ee4f6f"
+             class="list-group-item list-group-item-action flex-column align-items-center"&gt;
+                &lt;h5 class="mb-1 text-center"&gt;The Tropical MBA Podcast - Entrepreneurship, Travel, and Lifestyle&lt;/h5&gt;
+            &lt;p class="text-center"&gt;The Tropical MBA Podcast aims to show you the inside story of the people who are building "micro-multinational" businesses while they travel the world. We are interested in entrepreneurship, travel, internationalization, and personal freedom. Join 1,000's of listeners from all around the world, every Thursday morning.&lt;/p&gt;
+         &lt;/a&gt;
+     &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="d-flex justify-content-center"&gt;
+    &lt;div class="list-group align-items-center"&gt;
+        &lt;a href="https://open.spotify.com/show/3mliji9352UAk3XnWElnDV?si=46a94264061f4324"
+             class="list-group-item list-group-item-action flex-column align-items-center"&gt;
+                &lt;h5 class="mb-1 text-center"&gt;My First Million&lt;/h5&gt;
+            &lt;p class="text-center"&gt;The Hustle presents - My First Million. A podcast where we brainstorm new business ideas based on trends &amp; opportunities we see in the market. Sometimes we have famous guests, and they do it with us&lt;/p&gt;
+         &lt;/a&gt;
+     &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="d-flex justify-content-center"&gt;
+    &lt;div class="list-group align-items-center"&gt;
+        &lt;a href="https://open.spotify.com/show/3mliji9352UAk3XnWElnDV?si=46a94264061f4324"
+             class="list-group-item list-group-item-action flex-column align-items-center"&gt;
+                &lt;h5 class="mb-1 text-center"&gt;Y Combinator&lt;/h5&gt;
+            &lt;p class="text-center"&gt;Y Combinator is an American technology startup accelerator launched in March 2005. It has been used to launch more than 3,000 companies, including Stripe, Airbnb, Cruise, PagerDuty, DoorDash, Coinbase, Instacart, Dropbox, Twitch, and Reddit.&lt;/p&gt;
+         &lt;/a&gt;
+     &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="d-flex justify-content-center"&gt;
+    &lt;div class="list-group align-items-center"&gt;
+        &lt;a href="https://www.indiehackers.com/podcasts"
+             class="list-group-item list-group-item-action flex-column align-items-center"&gt;
+                &lt;h5 class="mb-1 text-center"&gt;Indie Hackers Podcasts&lt;/h5&gt;
+            &lt;p class="text-center"&gt;Get the latest tactics, opportunities, and stories from the best podcasts in the industry.&lt;/p&gt;
+         &lt;/a&gt;
+     &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="d-flex justify-content-center"&gt;
+    &lt;div class="list-group align-items-center"&gt;
+        &lt;a href="https://open.spotify.com/show/53JQGprpPgCT9m4lm5XOVg?si=9294a0a8cbbe4cf8"
+             class="list-group-item list-group-item-action flex-column align-items-center"&gt;
+                &lt;h5 class="mb-1 text-center"&gt;Here's The Thing&lt;/h5&gt;
+            &lt;p class="text-center"&gt;Here's The Thing is podcast with @ThatChickAngel and @KevOnStage. Buckle up its LIT.&lt;/p&gt;
+         &lt;/a&gt;
+     &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="d-flex justify-content-center"&gt;
+    &lt;div class="list-group align-items-center"&gt;
+        &lt;a href="https://teamcoco.com/podcasts/conan-obrien-needs-a-friend"
+             class="list-group-item list-group-item-action flex-column align-items-center"&gt;
+                &lt;h5 class="mb-1 text-center"&gt;Conan O'Brien Needs a Friend | Team Coco&lt;/h5&gt;
+            &lt;p class="text-center"&gt;After 25 years at the Late Night desk, Conan realized that the only people at his holiday party are the men and women who work for him. Over the years and despite thousands of interviews, Conan has never made a real and lasting friendship with any of…&lt;/p&gt;
+         &lt;/a&gt;
+     &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="d-flex justify-content-center"&gt;
+    &lt;div class="list-group align-items-center"&gt;
+        &lt;a href="https://podcasts.apple.com/us/podcast/how-i-built-this-with-guy-raz/id1150510297"
+             class="list-group-item list-group-item-action flex-column align-items-center"&gt;
+                &lt;h5 class="mb-1 text-center"&gt;How I Built This with Guy Raz | Podcast on Spotify&lt;/h5&gt;
+            &lt;p class="text-center"&gt;Listen to How I Built This with Guy Raz on Spotify.&lt;/p&gt;
+         &lt;/a&gt;
+     &lt;/div&gt;
+&lt;/div&gt;</content><category term="shakyracc"></category><category term="blog"></category></entry><entry><title>First Django Project</title><link href="https://shakyracornelius.github.io/shakyracc/first-django-project.html" rel="alternate"></link><published>2022-07-26T00:00:00-04:00</published><updated>2022-07-26T00:00:00-04:00</updated><author><name>shakyra</name></author><id>tag:shakyracornelius.github.io,2022-07-26:/shakyracc/first-django-project.html</id><summary type="html">&lt;p&gt;I spent the last 48 hours working on my first django &lt;a href="https://gentle-harbor-06443.herokuapp.com"&gt;project&lt;/a&gt;. It took way longer than i expected and the 48 hours mentioned do not include time spent reading django documentation in preparation for this weekend's coding session. It's fair to say that i'm exhausted but i think it …&lt;/p&gt;</summary><content type="html">&lt;p&gt;I spent the last 48 hours working on my first django &lt;a href="https://gentle-harbor-06443.herokuapp.com"&gt;project&lt;/a&gt;. It took way longer than i expected and the 48 hours mentioned do not include time spent reading django documentation in preparation for this weekend's coding session. It's fair to say that i'm exhausted but i think it was worth it. &lt;/p&gt;
 &lt;p&gt;Once again my main trouble was finding reliable and correct guides on how to execute the project. I attempted to reduce debugging time by spending a week reading documentation and troubleshooting problems i figured i might encounter based on my experience with pelican. lol. el-oh-el. i'm not gonna say it was a complete waste of time, but jumping into it head first would have been better. i spent way too much time reading and "requirements gathering" when i should have been building. &lt;/p&gt;
 &lt;p&gt;django's not bad at all now that i understand it a bit more. i think my biggest limitation is being afraid of concepts and terms i'm unfamiliar with. just go for it dude. &lt;/p&gt;
 &lt;p&gt;huge thanks to the following resources: &lt;br&gt;&lt;/p&gt;
@@ -13,7 +193,125 @@
 &lt;/ul&gt;
 &lt;p&gt;and shoutout to my friends who joined my first "live stream" hosted on, you guessed it, Zoom! I wanted a low friction way to document my thoughts as i built the project. constantly switching over to notion to add notes was taking way too much time. &lt;/p&gt;
 &lt;p&gt;that reminds me! i NEEEEED to find a more efficient way to work with html and css. i NEEEED the live refresh. i'm not exhagerating when i say that 30% of my time was spent on css and html today. ai meu deus. &lt;/p&gt;
-&lt;p&gt;time on the clock: 2022-07-26 12:34 am&lt;/p&gt;</content><category term="shakyracc"></category><category term="pelican"></category></entry><entry><title>Barriers To Entry</title><link href="https://shakyracornelius.github.io/shakyracc/barriers-to-entry.html" rel="alternate"></link><published>2022-07-24T00:00:00-04:00</published><updated>2022-07-24T00:00:00-04:00</updated><author><name>shakyra</name></author><id>tag:shakyracornelius.github.io,2022-07-24:/shakyracc/barriers-to-entry.html</id><summary type="html">&lt;h3&gt;2022-07-24-07-05&lt;/h3&gt;
+&lt;p&gt;time on the clock: 2022-07-26 12:34 am&lt;/p&gt;</content><category term="shakyracc"></category><category term="pelican"></category></entry><entry><title>Setting Up A Django Project</title><link href="https://shakyracornelius.github.io/shakyracc/setting-up-django-project.html" rel="alternate"></link><published>2022-07-26T00:00:00-04:00</published><updated>2022-07-26T00:00:00-04:00</updated><author><name>shakyra</name></author><id>tag:shakyracornelius.github.io,2022-07-26:/shakyracc/setting-up-django-project.html</id><summary type="html">&lt;h2&gt;Environment Set Up&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Create new directory for project to live in &lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;mkdir django-website 
+cd djangor-website&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Create virtual environment&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;python3 -m venv django_website&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Activate virtual environment&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;source venv/bin/activate&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Install Django into new virtual environment &lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;(venv) $ pip install Django&lt;/p&gt;
+&lt;h2&gt;Create a Django Project&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Ensure you are in the django …&lt;/p&gt;&lt;/li&gt;&lt;/ol&gt;</summary><content type="html">&lt;h2&gt;Environment Set Up&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Create new directory for project to live in &lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;mkdir django-website 
+cd djangor-website&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Create virtual environment&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;python3 -m venv django_website&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Activate virtual environment&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;source venv/bin/activate&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Install Django into new virtual environment &lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;(venv) $ pip install Django&lt;/p&gt;
+&lt;h2&gt;Create a Django Project&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Ensure you are in the django_website directory and activated virtual environment &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Creathe the project &lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;$ django-admin startproject personal_portfolio&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Reorder directory &lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;$ mv personal_portfolio/manage.py ./
+$ mv personal_portfolio/personal_portfolio/* personal_portfolio
+$ rm -r personal_portfolio/personal_portfolio/&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Start the server to check the set up was successful &lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;$ python manage.py runserver&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Go to localhost:8000 in browser. should see "istall worked successfully" page&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;Create a Django Application&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Create the app&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;$ python manage.py startapp hello_world&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Install the app in the personal_portfolio project.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;In django-website/personal_portfolio/settings.py add the following line of code under INSTALLED_APPS:&lt;/p&gt;
+&lt;p&gt;INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'hello_world',
+]&lt;/p&gt;
+&lt;h2&gt;Create a View&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;open views.py from the hello_world directory and define the view function called hello_world() by adding
+ the following &lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;from django.shortcuts import render&lt;/p&gt;
+&lt;p&gt;def hello_world(request):
+    return render(request, 'hello_world.html', {})&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Make template directory and add HTML template&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;$ mkdir hello_world/templates/
+$ touch hello_world/templates/hello_world.html&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Add the following lines of HTML to the file &lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;code&gt;&amp;lt;h1&amp;gt;Hello, World!&amp;lt;/h1&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Inside personal_portfolio/urls.py add URL configuration for the hello_worl app&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;from django.contrib import admin
+from django.urls import path, include&lt;/p&gt;
+&lt;p&gt;urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('', include('hello_world.urls')),
+]&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Create urls.py module inside the hello_world application &lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;$ touch hello_world/urls.py&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Import path object and app's views module. Create list of URL patterns that correspond ti the various view functions&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;from django.urls import path
+from hello_world import views&lt;/p&gt;
+&lt;p&gt;urlpatterns = [
+    path('', views.hello_world, name='hello_world'),
+]&lt;/p&gt;
+&lt;h1&gt;⚠️ Article to be completed soon&lt;/h1&gt;</content><category term="shakyracc"></category><category term="pelican"></category></entry><entry><title>Barriers To Entry</title><link href="https://shakyracornelius.github.io/shakyracc/barriers-to-entry.html" rel="alternate"></link><published>2022-07-24T00:00:00-04:00</published><updated>2022-07-24T00:00:00-04:00</updated><author><name>shakyra</name></author><id>tag:shakyracornelius.github.io,2022-07-24:/shakyracc/barriers-to-entry.html</id><summary type="html">&lt;h3&gt;2022-07-24-07-05&lt;/h3&gt;
 &lt;p&gt;Barriers to entry when updating the blog: &lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;it takes time&lt;/strong&gt;. i usually think “i’ll get to it later” but then obviously later comes and we’ve completely forgotten what it is we wanted to share. the whole point of this thing is to share a snapshot of thoughts …&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">&lt;h3&gt;2022-07-24-07-05&lt;/h3&gt;

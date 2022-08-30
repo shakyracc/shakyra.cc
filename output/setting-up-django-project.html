@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
+<head>
+    <title>Setting Up A Django Project 👩🏾‍💻 Shakyra</title>
+    <!-- Using the latest rendering mode for IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro" rel="stylesheet" type="text/css">
+    
+
+
+<link rel="canonical" href="./setting-up-django-project.html">
+
+        <meta name="author" content="shakyra" />
+        <meta name="keywords" content="pelican" />
+        <meta name="description" content="Environment Set Up Create new directory for project to live in mkdir django-website cd djangor-website Create virtual environment python3 -m venv django_website Activate virtual environment source venv/bin/activate Install Django into new virtual environment (venv) $ pip install Django Create a Django Project Ensure you are in the django …" />
+
+        <meta property="og:site_name" content="Shakyra" />
+        <meta property="og:type" content="article"/>
+        <meta property="og:title" content="Setting Up A Django Project"/>
+        <meta property="og:url" content="./setting-up-django-project.html"/>
+        <meta property="og:description" content="Environment Set Up Create new directory for project to live in mkdir django-website cd djangor-website Create virtual environment python3 -m venv django_website Activate virtual environment source venv/bin/activate Install Django into new virtual environment (venv) $ pip install Django Create a Django Project Ensure you are in the django …"/>
+        <meta property="article:published_time" content="2022-07-26" />
+            <meta property="article:section" content="shakyracc" />
+            <meta property="article:tag" content="pelican" />
+            <meta property="article:author" content="shakyra" />
+
+
+
+    <!-- Bootstrap -->
+        <link rel="stylesheet" href="./theme/css/bootstrap.cyborg.min.css" type="text/css"/>
+    <link href="./theme/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="./theme/css/pygments/colorful.css" rel="stylesheet">
+    <link rel="stylesheet" href="./theme/css/style.css" type="text/css"/>
+        <link href="./static/css/custom.css" rel="stylesheet">
+
+        <link href="./feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
+              title="Shakyra ATOM Feed"/>
+
+        <link href="./feeds/shakyracc.atom.xml" type="application/atom+xml" rel="alternate"
+              title="Shakyra shakyracc ATOM Feed"/>
+</head>
+<body>
+
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="./" class="navbar-brand">
+Shakyra            </a>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                         <li><a href="./pages/projects.html">
+                             Projects
+                          </a></li>
+                         <li><a href="./pages/roadmap.html">
+                             Roadmap
+                          </a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="./archives.html"><i class="fa fa-th-list"></i><span class="icon-label">Blog</span></a></li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+</div> <!-- /.navbar -->
+
+<!-- Banner -->
+<!-- End Banner -->
+
+<!-- Content Container -->
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+    <section id="content">
+        <article>
+            <header class="page-header">
+                <h1>
+                    <a href="./setting-up-django-project.html"
+                       rel="bookmark"
+                       title="Permalink to Setting Up A Django Project">
+                        Setting Up A Django Project
+                    </a>
+                </h1>
+            </header>
+            <div class="entry-content">
+                <div class="panel">
+                    <div class="panel-body">
+<footer class="post-info">
+    <span class="label label-default">Date</span>
+    <span class="published">
+        <i class="fa fa-calendar"></i><time datetime="2022-07-26T00:00:00-04:00"> Tue 26 July 2022</time>
+    </span>
+
+
+
+
+
+<span class="label label-default">Tags</span>
+	<a href="./tag/pelican.html">pelican</a>
+    
+</footer><!-- /.post-info -->                    </div>
+                </div>
+                <h2>Environment Set Up</h2>
+<ol>
+<li>Create new directory for project to live in </li>
+</ol>
+<p>mkdir django-website 
+cd djangor-website</p>
+<ol>
+<li>Create virtual environment</li>
+</ol>
+<p>python3 -m venv django_website</p>
+<ol>
+<li>Activate virtual environment</li>
+</ol>
+<p>source venv/bin/activate</p>
+<ol>
+<li>Install Django into new virtual environment </li>
+</ol>
+<p>(venv) $ pip install Django</p>
+<h2>Create a Django Project</h2>
+<ol>
+<li>
+<p>Ensure you are in the django_website directory and activated virtual environment </p>
+</li>
+<li>
+<p>Creathe the project </p>
+</li>
+</ol>
+<p>$ django-admin startproject personal_portfolio</p>
+<ol>
+<li>Reorder directory </li>
+</ol>
+<p>$ mv personal_portfolio/manage.py ./
+$ mv personal_portfolio/personal_portfolio/* personal_portfolio
+$ rm -r personal_portfolio/personal_portfolio/</p>
+<ol>
+<li>Start the server to check the set up was successful </li>
+</ol>
+<p>$ python manage.py runserver</p>
+<ol>
+<li>Go to localhost:8000 in browser. should see "istall worked successfully" page</li>
+</ol>
+<h2>Create a Django Application</h2>
+<ol>
+<li>Create the app</li>
+</ol>
+<p>$ python manage.py startapp hello_world</p>
+<ol>
+<li>Install the app in the personal_portfolio project.</li>
+</ol>
+<p>In django-website/personal_portfolio/settings.py add the following line of code under INSTALLED_APPS:</p>
+<p>INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'hello_world',
+]</p>
+<h2>Create a View</h2>
+<ol>
+<li>open views.py from the hello_world directory and define the view function called hello_world() by adding
+ the following </li>
+</ol>
+<p>from django.shortcuts import render</p>
+<p>def hello_world(request):
+    return render(request, 'hello_world.html', {})</p>
+<ol>
+<li>Make template directory and add HTML template</li>
+</ol>
+<p>$ mkdir hello_world/templates/
+$ touch hello_world/templates/hello_world.html</p>
+<ol>
+<li>Add the following lines of HTML to the file </li>
+</ol>
+<p><code>&lt;h1&gt;Hello, World!&lt;/h1&gt;</code></p>
+<ol>
+<li>Inside personal_portfolio/urls.py add URL configuration for the hello_worl app</li>
+</ol>
+<p>from django.contrib import admin
+from django.urls import path, include</p>
+<p>urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('', include('hello_world.urls')),
+]</p>
+<ol>
+<li>Create urls.py module inside the hello_world application </li>
+</ol>
+<p>$ touch hello_world/urls.py</p>
+<ol>
+<li>Import path object and app's views module. Create list of URL patterns that correspond ti the various view functions</li>
+</ol>
+<p>from django.urls import path
+from hello_world import views</p>
+<p>urlpatterns = [
+    path('', views.hello_world, name='hello_world'),
+]</p>
+<h1>⚠️ Article to be completed soon</h1>
+            </div>
+            <!-- /.entry-content -->
+        </article>
+    </section>
+
+        </div>
+    </div>
+</div>
+<!-- End Content Container -->
+
+<!-- <footer>
+   <div class="container">
+      <hr>
+      <div class="row">
+         <div class="col-xs-10">&copy; 2022 shakyra
+            &middot; Powered by <a href="https://github.com/getpelican/pelican-themes/tree/master/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
+            <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
+            <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>         </div>
+         <div class="col-xs-2"><p class="pull-right"><i class="fa fa-arrow-up"></i> <a href="#">Back to top</a></p></div>
+      </div>
+   </div>
+</footer> -->
+
+<script src="./theme/js/jquery.min.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="./theme/js/bootstrap.min.js"></script>
+
+<!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
+<script src="./theme/js/respond.min.js"></script>
+
+    <script src="./static/js/custom.js"></script>
+
+
+
+</body>
+</html>
