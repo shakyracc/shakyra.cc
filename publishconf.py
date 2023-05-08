@@ -20,5 +20,5 @@ DELETE_OUTPUT_DIRECTORY = True
 #DISQUS_SITENAME = ""
 #GOOGLE_ANALYTICS = ""
 
-SITEURL = 'https://shakyracornelius.github.io/shakyracc'
+SITEURL = 'https://shakyracc.github.io/shakyra.cc/'
 RELATIVE_URLS = True
